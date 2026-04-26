@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 
 WORKDIR /app
 
-COPY ./cart-service/src /app/src
+COPY ./src /app/src
 COPY ./pb /app/pb
 
 WORKDIR /app/src
