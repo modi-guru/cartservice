@@ -44,7 +44,7 @@ jobs:
           push: true
           tags: ${{ env.IMAGE_NAME }}:${{ env.TAG }}
 
-      # 🔥 6. Update Helm repo (FIXED CD PART)
+      #  Update Helm repo (FIXED CD PART)
       - name: Update Helm values (GitOps CD)
         env:
           TAG: ${{ env.TAG }}
